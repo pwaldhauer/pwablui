@@ -1,0 +1,41 @@
+{
+    "name": "pwaio/pwablui",
+    "authors": [
+        {
+            "name": "Philipp Waldhauer",
+            "email": "hi@pwa.io"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^10.0",
+        "blade-ui-kit/blade-heroicons": "^2.1",
+        "wire-elements/modal": "^1.0",
+        "laragear/webauthn": "^1.0",
+        "livewire/livewire": "^2.12",
+        "laravel/sanctum": "^3.2",
+        "laravel/pint": "^1.10"
+    },
+    "scripts": {
+        "pint": "vendor/bin/pint",
+        "phpstan": "vendor/bin/phpstan analyse",
+        "code-style": [
+            "@pint",
+            "@phpstan"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "PwaBlui\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PwaBlui\\PwaBluiServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
+    }
+}
