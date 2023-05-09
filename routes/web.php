@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::middleware('web')
+Route::middleware(['web', 'auth:sanctum'])
     ->group(function () {
         Route::get('user', 'PwaBlui\Controllers\UserProfileController@index')->name('user.profile');
 
