@@ -21,19 +21,10 @@
 
     <x-pwablui::form.button
             type="primary"
-            onclick="register(event)"
+            x-data="passKeys()"
+            x-on:click.prevent="create()"
     >
         Register new Passkey
     </x-pwablui::form.button>
-    <!-- Registering credentials -->
-    <script>
-        const register = event => {
-            event.preventDefault()
 
-            new WebAuthn().register()
-                .then(response => alert('Registration successful!'))
-                .catch(error => alert('Something went wrong, try again!'))
-        }
-
-    </script>
 </x-card>

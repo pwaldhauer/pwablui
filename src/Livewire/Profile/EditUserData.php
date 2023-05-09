@@ -2,6 +2,8 @@
 
 namespace PwaBlui\Livewire\Profile;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use PwaBlui\Models\User;
 
@@ -19,9 +21,13 @@ class EditUserData extends Component
         $this->user = auth()->user();
     }
 
-    public function logout()
+    public function logout(Request $request)
     {
-        auth()->logout();
+        auth()->guard('web')->logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
 
         return redirect()->route('login');
     }

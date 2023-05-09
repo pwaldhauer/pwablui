@@ -34,7 +34,7 @@
 
     {{ $slot }}
 
-    @vite(['resources/js/app.js', 'resources/js/vendor/webauthn/webauthn.js'])
+    @vite(['resources/js/app.js'])
 
     @livewireScripts
 
