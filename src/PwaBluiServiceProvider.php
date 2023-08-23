@@ -5,6 +5,7 @@ namespace PwaBlui;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
+use PwaBlui\Livewire\Components\Autocomplete;
 use PwaBlui\Livewire\Profile\EditUserData;
 use PwaBlui\Livewire\Profile\ManageApiKeys;
 use PwaBlui\Livewire\Profile\ManagePasskeys;
@@ -24,6 +25,8 @@ final class PwaBluiServiceProvider extends ServiceProvider
 
         Blade::anonymousComponentPath(__DIR__.'/../resources/views/components', 'pwablui');
         Blade::componentNamespace('PwaBlui\\Views\\Components', 'pwablui');
+
+        Livewire::component('components.autocomplete', Autocomplete::class);
 
         Livewire::component('profile.manage-passkeys', ManagePasskeys::class);
         Livewire::component('profile.manage-apikeys', ManageApiKeys::class);
