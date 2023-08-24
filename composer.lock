@@ -4,26 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9d17e155d55e22b02f0aec49a7b309b",
+    "content-hash": "33bcd8919df6af19095b2d553af357f6",
     "packages": [
         {
-            "name": "blade-ui-kit/blade-heroicons",
-            "version": "1.4.0",
+            "name": "andreiio/blade-remix-icon",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/blade-ui-kit/blade-heroicons.git",
-                "reference": "dea08e8308d9bad9ebff1bc482d5985dbaacc91b"
+                "url": "https://github.com/andreiio/blade-remix-icon.git",
+                "reference": "3f557db572c7469436f3baa2ed5d7c73600f54fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blade-ui-kit/blade-heroicons/zipball/dea08e8308d9bad9ebff1bc482d5985dbaacc91b",
-                "reference": "dea08e8308d9bad9ebff1bc482d5985dbaacc91b",
+                "url": "https://api.github.com/repos/andreiio/blade-remix-icon/zipball/3f557db572c7469436f3baa2ed5d7c73600f54fa",
+                "reference": "3f557db572c7469436f3baa2ed5d7c73600f54fa",
                 "shasum": ""
             },
             "require": {
-                "blade-ui-kit/blade-icons": "^1.1",
-                "illuminate/support": "^8.0|^9.0|^10.0",
-                "php": "^7.4|^8.0"
+                "blade-ui-kit/blade-icons": "^1.0",
+                "php": "^7.4|^8.0|^8.1"
             },
             "require-dev": {
                 "orchestra/testbench": "^6.0|^7.0|^8.0",
@@ -33,13 +32,13 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "BladeUI\\Heroicons\\BladeHeroiconsServiceProvider"
+                        "AndreiIonita\\BladeRemixIcon\\BladeRemixIconServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "BladeUI\\Heroicons\\": "src"
+                    "AndreiIonita\\BladeRemixIcon\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -48,32 +47,22 @@
             ],
             "authors": [
                 {
-                    "name": "Dries Vints",
-                    "homepage": "https://driesvints.com"
+                    "name": "Andrei Ioniță",
+                    "homepage": "https://andrei.io"
                 }
             ],
-            "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
-            "homepage": "https://github.com/blade-ui-kit/blade-heroicons",
-            "keywords": [
-                "Heroicons",
-                "blade",
-                "laravel"
-            ],
+            "description": "A package to easily make use of Remix Icon in your Laravel Blade views.",
             "support": {
-                "issues": "https://github.com/blade-ui-kit/blade-heroicons/issues",
-                "source": "https://github.com/blade-ui-kit/blade-heroicons/tree/1.4.0"
+                "issues": "https://github.com/andreiio/blade-remix-icon/issues",
+                "source": "https://github.com/andreiio/blade-remix-icon/tree/2.5.0"
             },
             "funding": [
                 {
-                    "url": "https://github.com/caneco",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/driesvints",
+                    "url": "https://github.com/code4romania",
                     "type": "github"
                 }
             ],
-            "time": "2023-01-25T17:57:58+00:00"
+            "time": "2023-07-31T13:16:34+00:00"
         },
         {
             "name": "blade-ui-kit/blade-icons",
@@ -5375,16 +5364,16 @@
     "packages-dev": [
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.30",
+            "version": "1.10.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "2910afdd3fe33e5afd71c09f3fb0d0845b48c410"
+                "reference": "c0eb159b598e2b637cbd52840e3d08f28d25dd47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/2910afdd3fe33e5afd71c09f3fb0d0845b48c410",
-                "reference": "2910afdd3fe33e5afd71c09f3fb0d0845b48c410",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c0eb159b598e2b637cbd52840e3d08f28d25dd47",
+                "reference": "c0eb159b598e2b637cbd52840e3d08f28d25dd47",
                 "shasum": ""
             },
             "require": {
@@ -5433,7 +5422,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-22T13:48:25+00:00"
+            "time": "2023-08-24T14:26:09+00:00"
         }
     ],
     "aliases": [],

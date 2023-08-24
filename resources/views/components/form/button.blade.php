@@ -27,7 +27,7 @@
         {{ $attributes }}
         @class($classes)
     >
-        <x-heroicon-m-arrow-path
+        <x-ri-arrow-down-line
             @class([
                 'w-5 h-5 ' => $size === 'default',
                 'w-3 h-3 ' => $size === 'small',

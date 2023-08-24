@@ -4,7 +4,7 @@
     x-data="passKeys()"
     x-on:click.prevent="login('{{ route('home') }}')"
 >
-    <x-heroicon-m-key class="w-5 h-5"/>
+    <x-ri-key-2-fill class="w-5 h-5"/>
 
     Use Passkey
 </x-pwablui::form.button>
