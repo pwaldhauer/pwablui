@@ -9,9 +9,9 @@
     "require": {
         "laravel/framework": "^10.0",
         "andreiio/blade-remix-icon": "^2.5",
-        "wire-elements/modal": "^1.0",
+        "wire-elements/modal": "^2.0.9",
         "laragear/webauthn": "^1.0",
-        "livewire/livewire": "^2.12",
+        "livewire/livewire": "^v3.4.8",
         "laravel/sanctum": "^3.2",
         "laravel/pint": "^1.10"
     },
